@@ -3,6 +3,7 @@ import excitations
 import circuit_d
 import circuit_od
 
+#calculate the excited state energies
 def ee_exact(symbols, geometry, electrons, charge,params,shots=0):
     # Build the electronic Hamiltonian
     H, qubits = qml.qchem.molecular_hamiltonian(symbols, geometry, charge=charge)
