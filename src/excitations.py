@@ -5,7 +5,7 @@ def inite(elec,orb):
     list1=[]
     #singles
     for x in range(elec):
-        count=orb-elec
+        count=elec
         while (count<orb):
             for e in range(elec):
                 if x==e:
@@ -23,8 +23,8 @@ def inite(elec,orb):
     #doubles
     for x in range(elec):
         for y in range(x+1,elec):
-            count1=orb-elec
-            count2=orb-elec
+            count1=elec
+            count2=elec
             for count1 in range(elec, orb, 2):
                 for count2 in range(elec, orb, 2):
                     cont=0
